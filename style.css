@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto serif'; /* Corrected the font-family syntax */
+  background-color: #d8a19b; /* A muted reddish-brown color */
+}
+
+header {
+  font-family: 'Lora' /* Corrected the font-family syntax */
+  background-color: #ffb3a7; /* A very soft, low-saturation red */
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  width: 100%; /* Set to 100% to be responsive */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto; /* Make the button width automatic */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  input,
+  select,
+  button {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px; /* Smaller padding on very small screens */
+  }
+  
+  form {
+    margin: 10px;
+  }
+  
+  input,
+  select {
+    padding: 8px; /* Smaller padding on very small screens */
+  }
+  
+  button {
+    padding: 8px 16px; /* Smaller padding on very small screens */
+  }
+  
+textarea.large-input {
+  width: 100%; /* Full width to maximize space */
+  height: 300px; /* Set a fixed height or make it adjustable with resize property */
+  padding: 10px; /* Padding for text inside the box */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+  border: 1px solid #ccc; /* A light border for the textarea */
+  resize: vertical; /* Allow the user to resize vertically */
+  font-family: 'Roboto serif; /* Set the desired font */
+  font-size: 14px; /* Set a readable font size */
+}
+.logo {
+    display: block;
+    margin: 0 auto; /* Center the logo */
+    max-width: 200px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
